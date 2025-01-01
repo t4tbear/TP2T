@@ -1,0 +1,49 @@
+:name 1TileCombine:main
+:budget_cap max
+
+:local int purple
+:global int legMax
+:local int legNum
+
+key.v()
+
+legNum = 0
+loop:
+purple = 0
+start:
+click(vec(1730.0, 680.0)) ;buy rare1
+click(vec(1736.0, 320.0)) ;click sort
+click(vec(1021.0, 258.0)) ;click tile1
+click(vec(1033.0, 403.0)) ;click combine1
+click(vec(1731.0, 684.0)) ;buy rare2
+click(vec(1730.0, 323.0)) ;click sort
+click(vec(1018.0, 259.0)) ;click tile1
+click(vec(1176.0, 401.0)) ;click combine2
+click(vec(1731.0, 675.0)) ;buy rare3
+click(vec(1728.0, 321.0)) ;click sort
+click(vec(1019.0, 264.0)) ;click tile1
+click(vec(1324.0, 403.0)) ;click combine3
+click(vec(1671.0, 407.0)) ;buy combine
+click(vec(1467.0, 408.0)) ;click combine4
+gotoif(stage2, purple == 2)
+click(vec(1037.0, 565.0)) ;click sell
+purple = purple + 1
+goto(start)
+stage2:
+waitframe()
+click(vec(1035.0, 408.0)) ;click combine1
+click(vec(1430.0, 563.0)) ;click sell slot1
+click(vec(1732.0, 329.0)) ;click sort
+click(vec(1023.0, 261.0)) ;click tile1
+click(vec(1178.0, 406.0)) ;click combine2
+click(vec(1415.0, 567.0)) ;click sell slot1
+click(vec(1728.0, 328.0)) ;click sort
+click(vec(1024.0, 260.0)) ;click tile1
+click(vec(1324.0, 405.0)) ;click combine3
+click(vec(1622.0, 401.0)) ;buy combine
+click(vec(1458.0, 405.0)) ;click combine4
+click(vec(1221.0, 61.0)) ;click endtile
+click(vec(1772.0, 321.0)) ;unwrap all
+waitframe()
+legNum = legNum + 1
+gotoif(loop, legNum < legMax)
