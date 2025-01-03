@@ -1,0 +1,32 @@
+:name BEAR.Trades:Trades TEv2.2
+
+:global int turbo.cycles.max
+:global int turbo.cycles
+
+key.p()
+isopen("tradingpost")
+
+gss("<size=20><color=white>trading", if(turbo.cycles.max == 0, "<color=red>Need turbo exec v2.2!</color></color></size>", if(gsg("<size=20><color=white>trading") == "", "Press p to stop</color></size>", "Exiting</color></size>")))
+goto(if(gsg("<size=20><color=white>trading") != "Press p to stop</color></size>", end, start))
+
+start:
+executesync("TE2.2:start")
+turbo.cycles.max = max(turbo.cycles.max, turbo.cycles + 50000)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+refresh()
+executesync("TE2.2:stop")
+goto(if(gsg("<size=20><color=white>trading") == "Press p to stop</color></size>", start, end))
+
+end:
+gu(if(turbo.cycles.max == 0, "", "<size=20><color=white>trading"))
