@@ -1,7 +1,7 @@
 #Bear.Trades
 
 This pair of scripts automate trading post trade count farming. The 'Trades TEv2.2loop' script is the farming script. The 'Benchmark' script runs the farming script for around 15 seconds then stops it. This, in conjunction with using full notation to check starting and final trade count, can be used to find the trades per second the farming script should be producing. Using those results, the 'loopCount' variable in the farming script, can be changed to gain more trades per second.
-The farming script requires the use {Turbo Exec v2.2}(https://github.com/d0sboots/TPT2_scripts/blob/main/common/turbo_exec/README.md) by [d0sboots](https://github.com/d0sboots). The 'Benchmark' script is a modified version of d0sboots' [crate idler bencharking script](https://github.com/d0sboots/PerfectTower/blob/main/README.md#trading-post-crate-spam).
+The farming script requires the use [Turbo Exec v2.2](https://github.com/d0sboots/TPT2_scripts/blob/main/common/turbo_exec/README.md) by [d0sboots](https://github.com/d0sboots). The 'Benchmark' script is a modified version of d0sboots' [crate idler bencharking script](https://github.com/d0sboots/PerfectTower/blob/main/README.md#trading-post-crate-spam).
 
 ## Bundle Import:
 
