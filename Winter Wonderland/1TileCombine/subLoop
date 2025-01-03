@@ -1,0 +1,7 @@
+:name 1TileCombine:subLoop
+
+:global int legMax
+
+key.n()
+
+legMax = legMax + -1
