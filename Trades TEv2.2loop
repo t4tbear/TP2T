@@ -1,0 +1,40 @@
+:name BEAR.Trades:Trades TEv2.2loop
+
+:global int turbo.cycles.max
+:global int turbo.cycles
+:global int x
+										;^^^^MAKE LOCAL
+:local int loopcount
+
+key.p()
+isopen("tradingpost")
+
+loopcount = 1000
+gss("<size=20><color=white>trading", if(turbo.cycles.max == 0, "<color=red>Need turbo exec v2.2!</color></color></size>", if(gsg("<size=20><color=white>trading") == "", "Press p to stop</color></size>", "Exiting</color></size>")))
+goto(if(gsg("<size=20><color=white>trading") != "Press p to stop</color></size>", end, start))
+
+start:
+gis("x",0)
+executesync("TE2.2:start")
+turbo.cycles.max = max(turbo.cycles.max, turbo.cycles + 50000)
+loop:
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+refresh()
+x += 1
+gotoif(loop, x % loopcount !=0)
+executesync("TE2.2:stop")
+goto(if(gsg("<size=20><color=white>trading") == "Press p to stop</color></size>", start, end))
+
+end:
+gu(if(turbo.cycles.max == 0, "", "<size=20><color=white>trading"))
