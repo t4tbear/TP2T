@@ -1,2 +1,2 @@
 # TP2T
-Scripts and other stuff for The Perfect Tower 2
+Scripts for The Perfect Tower 2
