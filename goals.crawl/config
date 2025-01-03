@@ -1,0 +1,27 @@
+:name goals.crawl:config
+
+:global int stage
+:local vector launch
+:local vector normal
+:local vector endless
+:local vector diff.easy
+:local vector diff.next
+:local vector region.next
+:local vector region.prev
+
+stage = 13
+launch = vec(402.0, 242.0)
+normal = vec(933.25, 905.0)
+endless = vec(1206.75, 905.0)
+diff.easy = vec(0.4953125, 0.64351851851852)
+diff.next = vec(0.0, -0.081481481481481)
+region.next = vec(705.0, 488.0)
+region.prev = vec(105.0, 488.0)
+gvs("<size=0%>launch<size=100%>", launch)
+gvs("<size=0%>normal<size=100%>", normal)
+gvs("<size=0%>endless<size=100%>", endless)
+gvs("<size=0%>diff.easy<size=100%>", diff.easy)
+gvs("<size=0%>diff.next<size=100%>", diff.next)
+gvs("<size=0%>region.next<size=100%>", region.next)
+gvs("<size=0%>region.prev<size=100%>", region.prev)
+wait(0.0)
