@@ -1,0 +1,16 @@
+:name D0S.Christmas (modified)
+:budget_cap max
+
+:global string Christmas
+
+key.c()
+
+gotoif(8, contains(Christmas, "g"))
+Christmas = "gooooo"
+{click.relative(1182./1600., 605./900., 1., 0.5)} ; Buy
+{click.relative(1469./1600., 287./900., 1., 0.5)} ; Unwrap
+{click.relative(806./1600.,  228./900., 1., 0.5)} ; Last slot
+{click.relative(816./1600.,  500./900., 1., 0.5)} ; Sell
+gotoif(3, contains(Christmas, "g"))
+gu("Christmas")
+;change to 900x1600 find coords, then change last slot based on sleigh pad level
