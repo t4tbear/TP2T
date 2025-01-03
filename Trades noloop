@@ -1,0 +1,26 @@
+:name BEAR.Trades:Trades no loop
+:budget_cap max
+
+key.p()
+isopen("tradingpost")
+
+gss("<size=20><color=white>trading", if(gsg("<size=20><color=white>trading") == "", "Press p to stop</color></size>", "Exiting</color></size>"))
+goto(if(gsg("<size=20><color=white>trading") != "Press p to stop</color></size>", end, start))
+start:
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+trade(0,0.1)
+refresh()
+goto(if(gsg("<size=20><color=white>trading") == "Press p to stop</color></size>", start, end))
+
+end:
+gu("<size=20><color=white>trading")
