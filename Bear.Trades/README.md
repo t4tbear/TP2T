@@ -4,9 +4,11 @@ This pair of scripts automate trading post trade count farming. The 'Trades TEv2
 The farming script requires the use [Turbo Exec v2.2](https://github.com/d0sboots/TPT2_scripts/blob/main/common/turbo_exec/README.md) by [d0sboots](https://github.com/d0sboots). The 'Benchmark' script is a modified version of d0sboots' [crate idler bencharking script](https://github.com/d0sboots/PerfectTower/blob/main/README.md#trading-post-crate-spam).
 
 ## Bundle Import:
+```
 
+```
 
-# Trades TEv2.2loop:
+## Trades TEv2.2loop:
 
 d0sboots Editor Import:
 ```
@@ -18,7 +20,7 @@ Game Import:
 7VfNjtMwEH6VrK9UJklXLKraIpB6RSvUG92D60xTa1NPZE9oy2pPPAU8Aa/AdffFkJOWTYNDf7QSIFWVHNeen3xfZsbjO2alUTlZ1vt4x4QkhdrN2cRkKEXGlSZugSZTidqS0DQpwjC8nFCGmEssdHMrfvxePrvlGFYj6zA3iaI0w6nIuCWjdOo17MSSvlWfYRCHw77EDM1gOVcEQzIiUTotBYHAaGHWG1PVmsRFLoyyqN17V2sbjw5H2uIupMJMkcu1zMDyhVj5pMJ4MGhCrUPcGRv6VxsYBpLhe4AkKB0GsAIZfIp5fNF/WQoMn56OgGEb0iiqIa0v79LbhncPvYeBv/RDLR3AtQFrgzwgDCxh3oTl03k1WilSOm3IusiZpaDBKMlTJCxVpltONp/5LxBy4SXkSOhlBEWv90ZQvEP574m1E+YtWRVGzbhujd9tuna3xLtILQjsWkuv6el4FPO4Z0kYOuKVPJnn9q6cyvbPaQlcagqjaL4AUvLgcjCrW/Kz+KLJ4vXjF2+t24RPjpa4m8OJ5aP78O3h66/fjzdnB2cHZwdnB0c46NYdGJgZsPMjj45TK6r35GkrpdXyn465WiegZl71qxauvN3h8wLqLjCpN84+9dbGua2veJ5TWm9PaMz/2ZbK32Oe0lL5WqVDW6+KngpkoV1GFP/bfaN9dc93YTcdJlEn6uke6JRiwqXmS6UTXHJlMQftbwNrZcaZUou8yCyUhm5hzXO3qMUCWI+NXZmzwXjkLkAuJ1iH5ULeitTtvhu9/cArEXZ/c/8T
 ```
 
-# Benchmark:
+## Benchmark:
 
 d0sboots Editor Import:
 ```
